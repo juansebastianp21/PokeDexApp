@@ -13,6 +13,7 @@ export class PokemonSearchComponent implements OnInit {
   pokemon: any[] = [];
 
   ngOnInit() {
+    
   }
 
   onSearch(Form: NgForm){

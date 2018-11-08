@@ -1,10 +1,10 @@
 
 <form #searchForm="ngForm" (ngSubmit)="onSearch(searchForm)">
   <div class="form-group">
-    <label for="exampleInputEmail1">Enter the pokemon name</label>
-    <input name="pokemonName" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" ngModel required #name="ngModel">
+    <h1 class="page-header" >Search pokemon by name</h1>
+    <input name="pokemonName" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter pokemon name" ngModel required #name="ngModel">
   </div>
-  <button class="btn btn-light bg-primary" type="submit" >Search</button>
+  <button class="btn btn-dark bg-dark" type="submit" >Search</button>
 </form>
 <div class="container">
 <div class="row">

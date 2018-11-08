@@ -11,3 +11,8 @@ table {
   .select-container{
     margin-bottom: 4ex;
   }
+  .btn{
+    margin:2ex;
+    margin-left: 0;
+    margin-bottom: 0;
+  }

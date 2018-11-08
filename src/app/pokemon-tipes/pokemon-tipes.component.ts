@@ -35,15 +35,23 @@ export class PokemonTipesComponent implements OnInit {
 
 
     let chart = new Chart('canvas',{
-      type: 'doughnut',
+      type: 'pie',
       data:{
         labels:['normal','fighting','flying','poison','ground','rock','bug','ghost','steel','fire','water','grass','electric','psychic','ice','dragon','dark','fairy'],
         datasets:[
           {
             label: 'Points',
-            data: this.typeData
+            data: this.typeData,
+            backgroundColor: ['#d3d3d3','#fff4e1','#e9ccb1','#ba68c8','#c6ae01','#4e3b31','#006600','#6a1b9a','#828282','#ff8000','#0066ff','#009900','#ffff00','#ff0080','#33ccff','#cc0000','#212121','#f699cd'],
+            borderWidth: [5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5]
           }
         ]
+      },
+      options:{
+        cutoutPercentage: 60,
+        animation:{
+          animateScale: true
+        }
       }
     }
     );
