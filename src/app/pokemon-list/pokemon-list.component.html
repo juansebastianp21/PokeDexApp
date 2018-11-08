@@ -1,0 +1,29 @@
+<div class="select-container">
+  <select class="custom-select" id="region" name="region" [(ngModel)] = "region">
+      <option selected value="2">Kanto</option>
+      <option value="3">Johto</option>
+      <option value="4">Hoenn</option>
+      <option value="5">Sinnoh</option>
+    </select>
+    <button class="btn btn-dark" (click)="listRegionPokemon(region)">List</button>
+</div>
+<div class="row">
+  <div class="col">
+    <table  class="table table-hover" row>
+      <thead >
+        <tr>
+          <th>Number</th>
+          <th>Name</th>
+          <th>Link</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let pokemon of pokemonList; index as i">
+          <td *ngIf="i<21">{{i}}</td>
+          <td *ngIf="i<21">{{pokemon.pokemon_species.name}}</td>
+          <td *ngIf="i<21"><a href=`{{pokemon.pokemon_species.url}}`>{{pokemon.pokemon_species.url}}</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
