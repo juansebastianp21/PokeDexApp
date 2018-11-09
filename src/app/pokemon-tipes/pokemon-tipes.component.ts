@@ -42,13 +42,13 @@ export class PokemonTipesComponent implements OnInit {
           {
             label: 'Points',
             data: this.typeData,
-            backgroundColor: ['#d3d3d3','#fff4e1','#e9ccb1','#ba68c8','#c6ae01','#4e3b31','#006600','#6a1b9a','#828282','#ff8000','#0066ff','#009900','#ffff00','#ff0080','#33ccff','#cc0000','#212121','#f699cd'],
-            borderWidth: [5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5]
+            backgroundColor: ['#d3d3d3','#fff4e1','#e9ccb1','#ba68c8','#c6ae01','#4e3b31','#006600','#6a1b9a','#848484','#ff8000','#0066ff','#009900','#ffff00','#ff0080','#33ccff','#cc0000','#414141','#f699cd'],
+            borderWidth: [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
           }
         ]
       },
       options:{
-        cutoutPercentage: 60,
+        
         animation:{
           animateScale: true
         }

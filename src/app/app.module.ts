@@ -22,7 +22,6 @@ import { PokemonListComponent } from './pokemon-list/pokemon-list.component';
 import { PokemonSearchComponent } from './pokemon-search/pokemon-search.component';
 import { PokemonTipesComponent } from './pokemon-tipes/pokemon-tipes.component';
 import { PokemonInitialComponent } from './pokemon-initial/pokemon-initial.component';
-import { PokemonCardComponent } from './pokemon-card/pokemon-card.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +31,7 @@ import { PokemonCardComponent } from './pokemon-card/pokemon-card.component';
     PokemonSearchComponent,
     PokemonTipesComponent,
     PokemonInitialComponent,
-    PokemonCardComponent,
+ 
     ],
   imports: [
     BrowserModule,
